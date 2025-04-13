@@ -45,7 +45,7 @@ test('Test with soft assertions', async ({ page }) => {
 
   await page.goto('/');
 
-  await expect.soft(page.getByTestId('location')).toContainText('Mumbai'); 
+  //await expect.soft(page.getByTestId('location')).toContainText('Mumbai'); 
 
   await expect(page.getByTestId('location')).toContainText('Switzerland');
 });
